@@ -6,10 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+.batman-logo{
+  animation: Batman-logo-spin infinite 5s ease-out;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s ease-out;
   }
 }
 
@@ -28,11 +31,20 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
+@keyframes Batman-logo-spin {
+  from {
+    transform: perspective(800px) rotate3d(1, 0deg, 0, 0deg);
+  }
+  to {
+    transform: perspective(800px) rotate3d(1, -360, 0, 360deg)
+  }
+
+} 
