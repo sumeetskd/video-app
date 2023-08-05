@@ -12,7 +12,7 @@ function App() {
         <img src={imgUrl} class="batman-logo" height = "200" width = "300" alt="Batman"/>
         <ReactPlayer 
           url={vidUrl}
-          playing={false}
+          playing={true}
           volume={0.5}
           loop={true}
           controls={true}
